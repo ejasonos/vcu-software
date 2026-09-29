@@ -89,7 +89,7 @@ export async function generateAIResponse(userMessage: string, vcuState: Assistan
 
   try {
     const response = await openai.chat.completions.create({
-      model: 'meta/llama-3.1-8b-instruct',
+      model: 'meta/llama-3.2-11b-instruct',
       messages,
       temperature: 0.2,
     });
